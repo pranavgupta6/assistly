@@ -8,9 +8,10 @@ import { ProjectHeader } from "../components/project-header";
 import { FragmentWeb } from "../components/fragment-web";
 import { FileExplorer } from "@/components/file-explorer";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { EyeIcon, CodeIcon, CrownIcon } from "lucide-react";
+import { EyeIcon, CodeIcon, CrownIcon, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { UserControl } from "@/components/user-control";
 
 
 
@@ -68,6 +69,7 @@ export const ProjectView = ({ projectId }: Props) => {
                                         <CrownIcon /> Upgrade
                                     </Link>
                                 </Button>
+                                <UserControl />
                             </div>
                         </div>
                         <TabsContent value="preview">
